@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Window</title>
+</head>
+
+<body>
+    <section class="sending">
+        <div class="sending__container">
+            <div class="sending__form form">
+                <form action="">
+                    <div class="form__column">
+                        <div class="form__indent_label">
+                            <label>
+                                <input required type="radio" class="form__inner_radio" name="name">
+                                <span class="form__jackdaw"></span>
+                                <p class="form__text">license plan #<span class="form__text-license">1</span></p>
+                                <span class="form__indent_select"></span>
+                            </label>
+                            <span class="form__subtext">$<span class="form__subtext_price">13</span> per license</span>
+                        </div>
+                        <div class="form__indent_label">
+                            <label>
+                                <input required type="radio" class="form__inner_radio" name="name">
+                                <span class="form__jackdaw"></span>
+                                <p class="form__text">license plan #<span class="form__text-license">2</span></p>
+                                <span class="form__indent_select"></span>
+                            </label>
+                            <span class="form__subtext">$<span class="form__subtext_price">22</span> per license</span>
+                        </div>
+                        <div class="form__indent_label">
+                            <label>
+                                <input required type="radio" class="form__inner_radio" name="name">
+                                <span class="form__jackdaw"></span>
+                                <p class="form__text">license plan #<span class="form__text-license">3</span></p>
+                                <span class="form__indent_select"></span>
+                            </label>
+                            <span class="form__subtext">$<span class="form__subtext_price">34</span> per license</span>
+                        </div>
+                    </div>
+                    <div class="form__column">
+                        <div class="form__choice">
+                            <p class="form__choice_text">Number of licenses:</p>
+                            <div class="form__option">
+                                <select id="amount-license">
+                                    <option selected>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <span class="form__arrow"></span>
+                            </div>
+                        </div>
+                        <div class="form__inner">
+                            <div class="form__sum">
+                                <h2 class="form__sum_title">total:</h2>
+                                <p class="form__sum_text">$<span id="form__sum_total-price">0</span><span class="form__sum_text-val">US</span></p>
+                            </div>
+                            <div class="form__submit_wrap">
+                                <input type="submit" class="form__submit" value="buy now">
+                            </div>
+                            <p class="form__inner_text-plan">Selected plan: # <span id="form__inner_selected-plan">0</span></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
